@@ -1,3 +1,6 @@
+
+//<script src="https://cdn.jsdelivr.net/gh/Shubhra22/pricingtab@main/PricingTab.js"></script>
+
 // PricingTab.js - Simplified version focusing on features list
 (function() {
   class PricingTab extends HTMLElement {

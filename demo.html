@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeatureList Demo</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .demo-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>FeatureList Library Demo</h1>
+
+    <div class="demo-section">
+        <h2>Using Features Array (React-style)</h2>
+        <feature-list 
+            features='[
+                "50 product campaigns / embeds",
+                "50 product scans",
+                "500MB Storage",
+                "5000 Page Views/Month",
+                "Embed Anywhere",
+                "3D viewer",
+                "Export model to all format",
+                "AR Virtual Try on",
+                "Object Scanner",
+                "Page Analytics",
+                "Generate AR code (QR code for AR)",
+                "Polymuse branding"
+            ]'
+            theme="blue">
+        </feature-list>
+    </div>
+
+    <div class="demo-section">
+        <h2>Using Child Elements (HTML-style)</h2>
+        <feature-list theme="purple" icon="★">
+            <feature>Easy to integrate</feature>
+            <feature>Lightweight</feature>
+            <feature>Customizable</feature>
+            <feature>Modern look</feature>
+        </feature-list>
+    </div>
+
+    <div class="demo-section">
+        <h2>Without Animation</h2>
+        <feature-list 
+            features='["Feature 1", "Feature 2", "Feature 3"]'
+            theme="orange" 
+            animation="false">
+        </feature-list>
+    </div>
+
+    <script src="FeatureList.js"></script>
+</body>
+</html> 
